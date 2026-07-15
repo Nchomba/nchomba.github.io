@@ -239,7 +239,7 @@
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#process">Process Flow</a></li>
-    <li><a href="#usecase">Use Case</a></li>
+    <li><a href="#usecase">Pivot &amp; Dashboard</a></li>
     <li><a href="#decision">Decision Tree</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -580,170 +580,284 @@
   </div>
 </div>
 
-<!-- ══════════ USE CASE DIAGRAM ══════════ -->
+<!-- ══════════ PIVOT TABLES & DASHBOARDS ══════════ -->
 <div class="section-full" id="usecase">
   <div class="inner">
-    <h2 class="sh">Use Case Diagram</h2>
+    <h2 class="sh">Pivot Tables &amp; Dashboards</h2>
     <div class="divider"></div>
-    <p class="sd">Shows which actors interact with each system function across both projects</p>
+    <p class="sd">Key analytical outputs — from raw data to interactive dashboards and pivot-driven insights</p>
 
+    <!-- INSTACART -->
     <div class="diag-box">
-      <h3>👤 Instacart — Use Case Diagram</h3>
-      <p class="diag-desc">Actor–system interactions for the Instacart customer analysis platform.</p>
-      <svg class="diag" viewBox="0 0 820 440" xmlns="http://www.w3.org/2000/svg">
-        <!-- System boundary -->
-        <rect x="180" y="20" width="500" height="380" rx="12" fill="none" stroke="#2e86de" stroke-width="2" stroke-dasharray="8,4"/>
-        <text x="430" y="14" text-anchor="middle" fill="#1a5fa8" font-size="11" font-weight="700">«system» Instacart Analysis System</text>
+      <h3>🛒 Instacart — Customer Segmentation Pivot &amp; Dashboard</h3>
+      <p class="diag-desc">Pivot analysis of 3M+ orders to uncover order frequency, peak times, and department-level reorder rates. Results fed directly into the Power BI marketing dashboard.</p>
+      <svg class="diag" viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg">
+        <!-- Pivot Table -->
+        <rect x="10" y="10" width="420" height="390" rx="10" fill="#ebf5fb" stroke="#2e86de" stroke-width="1.5"/>
+        <text x="220" y="36" text-anchor="middle" fill="#0d2137" font-size="13" font-weight="800">📊 Excel Pivot Table</text>
+        <text x="220" y="52" text-anchor="middle" fill="#5d6d7e" font-size="10">Orders by Customer Segment × Department</text>
+        <!-- Header row -->
+        <rect x="20" y="62" width="400" height="28" rx="4" fill="#0d2137"/>
+        <text x="100" y="81" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Segment</text>
+        <text x="220" y="81" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Avg Orders/Month</text>
+        <text x="340" y="81" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Top Department</text>
+        <!-- Rows -->
+        <rect x="20" y="90" width="400" height="26" rx="0" fill="#fff"/>
+        <text x="100" y="107" text-anchor="middle" fill="#1c2833" font-size="10">🏆 VIP (Top 5%)</text>
+        <text x="220" y="107" text-anchor="middle" fill="#27ae60" font-size="10" font-weight="700">18.4</text>
+        <text x="340" y="107" text-anchor="middle" fill="#1c2833" font-size="10">Produce</text>
+        <rect x="20" y="116" width="400" height="26" rx="0" fill="#ebf5fb"/>
+        <text x="100" y="133" text-anchor="middle" fill="#1c2833" font-size="10">⭐ Loyal</text>
+        <text x="220" y="133" text-anchor="middle" fill="#2e86de" font-size="10" font-weight="700">9.2</text>
+        <text x="340" y="133" text-anchor="middle" fill="#1c2833" font-size="10">Dairy &amp; Eggs</text>
+        <rect x="20" y="142" width="400" height="26" rx="0" fill="#fff"/>
+        <text x="100" y="159" text-anchor="middle" fill="#1c2833" font-size="10">🔄 Regular</text>
+        <text x="220" y="159" text-anchor="middle" fill="#e67e22" font-size="10" font-weight="700">4.7</text>
+        <text x="340" y="159" text-anchor="middle" fill="#1c2833" font-size="10">Snacks</text>
+        <rect x="20" y="168" width="400" height="26" rx="0" fill="#ebf5fb"/>
+        <text x="100" y="185" text-anchor="middle" fill="#1c2833" font-size="10">💤 Lapsed</text>
+        <text x="220" y="185" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="700">0.8</text>
+        <text x="340" y="185" text-anchor="middle" fill="#1c2833" font-size="10">Beverages</text>
+        <rect x="20" y="194" width="400" height="26" rx="0" fill="#fff"/>
+        <text x="100" y="211" text-anchor="middle" fill="#1c2833" font-size="10">🆕 New</text>
+        <text x="220" y="211" text-anchor="middle" fill="#9b59b6" font-size="10" font-weight="700">2.1</text>
+        <text x="340" y="211" text-anchor="middle" fill="#1c2833" font-size="10">Frozen</text>
+        <!-- Peak hours bar chart -->
+        <text x="220" y="248" text-anchor="middle" fill="#0d2137" font-size="11" font-weight="800">Peak Order Hours (Pivot — Count of Orders)</text>
+        <rect x="50"  y="290" width="30" height="60" fill="#2e86de" rx="3"/>
+        <rect x="100" y="270" width="30" height="80" fill="#2e86de" rx="3"/>
+        <rect x="150" y="255" width="30" height="95" fill="#1a5fa8" rx="3"/>
+        <rect x="200" y="260" width="30" height="90" fill="#1a5fa8" rx="3"/>
+        <rect x="250" y="275" width="30" height="75" fill="#2e86de" rx="3"/>
+        <rect x="300" y="290" width="30" height="60" fill="#2e86de" rx="3"/>
+        <rect x="350" y="305" width="30" height="45" fill="#5dade2" rx="3"/>
+        <text x="65"  y="362" text-anchor="middle" fill="#5d6d7e" font-size="9">8am</text>
+        <text x="115" y="362" text-anchor="middle" fill="#5d6d7e" font-size="9">10am</text>
+        <text x="165" y="362" text-anchor="middle" fill="#0d2137" font-size="9" font-weight="700">12pm</text>
+        <text x="215" y="362" text-anchor="middle" fill="#0d2137" font-size="9" font-weight="700">2pm</text>
+        <text x="265" y="362" text-anchor="middle" fill="#5d6d7e" font-size="9">4pm</text>
+        <text x="315" y="362" text-anchor="middle" fill="#5d6d7e" font-size="9">6pm</text>
+        <text x="365" y="362" text-anchor="middle" fill="#5d6d7e" font-size="9">8pm</text>
+        <line x1="30" y1="350" x2="400" y2="350" stroke="#ccc" stroke-width="1"/>
+        <text x="220" y="395" text-anchor="middle" fill="#5d6d7e" font-size="9" font-style="italic">Peak: 12pm–2pm · Pivot built in Excel, replicated as DAX measure in Power BI</text>
 
-        <!-- Use Cases -->
-        <ellipse cx="430" cy="65"  rx="120" ry="22" fill="#ebf5fb" stroke="#2e86de" stroke-width="1.5"/>
-        <text x="430" y="69" text-anchor="middle" fill="#0d2137" font-size="10" font-weight="600">Analyse order history</text>
-
-        <ellipse cx="430" cy="125" rx="120" ry="22" fill="#ebf5fb" stroke="#2e86de" stroke-width="1.5"/>
-        <text x="430" y="129" text-anchor="middle" fill="#0d2137" font-size="10" font-weight="600">Segment customers</text>
-
-        <ellipse cx="430" cy="185" rx="120" ry="22" fill="#ebf5fb" stroke="#2e86de" stroke-width="1.5"/>
-        <text x="430" y="189" text-anchor="middle" fill="#0d2137" font-size="10" font-weight="600">Generate Power BI dashboard</text>
-
-        <ellipse cx="430" cy="245" rx="120" ry="22" fill="#ebf5fb" stroke="#2e86de" stroke-width="1.5"/>
-        <text x="430" y="249" text-anchor="middle" fill="#0d2137" font-size="10" font-weight="600">Produce SSRS report</text>
-
-        <ellipse cx="430" cy="305" rx="120" ry="22" fill="#ebf5fb" stroke="#2e86de" stroke-width="1.5"/>
-        <text x="430" y="309" text-anchor="middle" fill="#0d2137" font-size="10" font-weight="600">Create marketing recommendation</text>
-
-        <ellipse cx="430" cy="365" rx="120" ry="22" fill="#ebf5fb" stroke="#2e86de" stroke-width="1.5"/>
-        <text x="430" y="369" text-anchor="middle" fill="#0d2137" font-size="10" font-weight="600">Present PowerPoint findings</text>
-
-        <!-- Actor: Analyst (left) -->
-        <circle cx="60" cy="140" r="18" fill="none" stroke="#0d2137" stroke-width="2"/>
-        <line x1="60" cy1="158" x2="60" y2="190" stroke="#0d2137" stroke-width="2"/>
-        <line x1="60" y1="165" x2="34" y2="178" stroke="#0d2137" stroke-width="2"/>
-        <line x1="60" y1="165" x2="86" y2="178" stroke="#0d2137" stroke-width="2"/>
-        <line x1="60" y1="190" x2="40" y2="218" stroke="#0d2137" stroke-width="2"/>
-        <line x1="60" y1="190" x2="80" y2="218" stroke="#0d2137" stroke-width="2"/>
-        <text x="60" cy1="140" y="140" text-anchor="middle" fill="#0d2137" font-size="10">👤</text>
-        <text x="60" y="235" text-anchor="middle" fill="#0d2137" font-size="10" font-weight="700">Analyst</text>
-
-        <line x1="100" y1="140" x2="310" y2="65"  stroke="#555" stroke-width="1.2"/>
-        <line x1="100" y1="140" x2="310" y2="125" stroke="#555" stroke-width="1.2"/>
-        <line x1="100" y1="140" x2="310" y2="185" stroke="#555" stroke-width="1.2"/>
-        <line x1="100" y1="140" x2="310" y2="245" stroke="#555" stroke-width="1.2"/>
-        <line x1="100" y1="140" x2="310" y2="305" stroke="#555" stroke-width="1.2"/>
-
-        <!-- Actor: Stakeholder (right) -->
-        <circle cx="760" cy="260" r="18" fill="none" stroke="#1a7a4a" stroke-width="2"/>
-        <line x1="760" y1="278" x2="760" y2="310" stroke="#1a7a4a" stroke-width="2"/>
-        <line x1="760" y1="285" x2="734" y2="298" stroke="#1a7a4a" stroke-width="2"/>
-        <line x1="760" y1="285" x2="786" y2="298" stroke="#1a7a4a" stroke-width="2"/>
-        <line x1="760" y1="310" x2="740" y2="338" stroke="#1a7a4a" stroke-width="2"/>
-        <line x1="760" y1="310" x2="780" y2="338" stroke="#1a7a4a" stroke-width="2"/>
-        <text x="760" y="260" text-anchor="middle" fill="#1a7a4a" font-size="10">👤</text>
-        <text x="760" y="355" text-anchor="middle" fill="#1a7a4a" font-size="10" font-weight="700">Stakeholder</text>
-
-        <line x1="720" y1="260" x2="550" y2="185" stroke="#1a7a4a" stroke-width="1.2"/>
-        <line x1="720" y1="260" x2="550" y2="245" stroke="#1a7a4a" stroke-width="1.2"/>
-        <line x1="720" y1="260" x2="550" y2="305" stroke="#1a7a4a" stroke-width="1.2"/>
-        <line x1="720" y1="260" x2="550" y2="365" stroke="#1a7a4a" stroke-width="1.2"/>
+        <!-- Dashboard mockup -->
+        <rect x="450" y="10" width="400" height="390" rx="10" fill="#0d2137" stroke="#2e86de" stroke-width="1.5"/>
+        <text x="650" y="36" text-anchor="middle" fill="#fff" font-size="13" font-weight="800">📈 Power BI Dashboard</text>
+        <text x="650" y="52" text-anchor="middle" fill="#7fb3d3" font-size="10">Instacart Customer Analytics</text>
+        <!-- KPI cards -->
+        <rect x="460" y="62" width="110" height="56" rx="6" fill="#1a3c6e"/>
+        <text x="515" y="83" text-anchor="middle" fill="#5dade2" font-size="16" font-weight="900">3.2M</text>
+        <text x="515" y="99" text-anchor="middle" fill="#7fb3d3" font-size="9">Total Orders</text>
+        <rect x="580" y="62" width="110" height="56" rx="6" fill="#0e4d2e"/>
+        <text x="635" y="83" text-anchor="middle" fill="#a9dfbf" font-size="16" font-weight="900">206K</text>
+        <text x="635" y="99" text-anchor="middle" fill="#a9dfbf" font-size="9">Customers</text>
+        <rect x="700" y="62" width="140" height="56" rx="6" fill="#4a235a"/>
+        <text x="770" y="83" text-anchor="middle" fill="#d7bde2" font-size="16" font-weight="900">$14.25</text>
+        <text x="770" y="99" text-anchor="middle" fill="#d7bde2" font-size="9">Avg Basket Size</text>
+        <!-- Donut chart mockup -->
+        <circle cx="530" cy="210" r="65" fill="none" stroke="#1a5fa8" stroke-width="30" stroke-dasharray="195 205"/>
+        <circle cx="530" cy="210" r="65" fill="none" stroke="#27ae60" stroke-width="30" stroke-dasharray="90 310" stroke-dashoffset="-195"/>
+        <circle cx="530" cy="210" r="65" fill="none" stroke="#e67e22" stroke-width="30" stroke-dasharray="50 350" stroke-dashoffset="-285"/>
+        <circle cx="530" cy="210" r="65" fill="none" stroke="#e74c3c" stroke-width="30" stroke-dasharray="34 366" stroke-dashoffset="-335"/>
+        <text x="530" y="206" text-anchor="middle" fill="#fff" font-size="11" font-weight="800">Segment</text>
+        <text x="530" y="220" text-anchor="middle" fill="#7fb3d3" font-size="9">Mix</text>
+        <text x="620" y="165" fill="#7fb3d3" font-size="9">● VIP 31%</text>
+        <text x="620" y="182" fill="#7fb3d3" font-size="9">● Loyal 22%</text>
+        <text x="620" y="199" fill="#7fb3d3" font-size="9">● Regular 16%</text>
+        <text x="620" y="216" fill="#7fb3d3" font-size="9">● Lapsed 31%</text>
+        <!-- Trend line -->
+        <text x="650" y="298" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Weekly Order Trend (DAX: Rolling 4-wk avg)</text>
+        <polyline points="460,370 490,360 520,355 550,340 580,345 610,330 640,318 670,322 700,310 730,300 760,295 790,285 820,280 840,275" fill="none" stroke="#5dade2" stroke-width="2"/>
+        <line x1="460" y1="375" x2="840" y2="375" stroke="#333" stroke-width="1"/>
+        <text x="650" y="395" text-anchor="middle" fill="#5d6d7e" font-size="9" font-style="italic">Slicer: Department · Date range · Loyalty tier</text>
       </svg>
     </div>
 
+    <!-- BIKE GEAR -->
     <div class="diag-box">
-      <h3>🚲 Bike Gear — Use Case Diagram</h3>
-      <p class="diag-desc">Actor–system interactions for the Bike Gear retail analytics platform, including the MSBI stack.</p>
-      <svg class="diag" viewBox="0 0 820 440" xmlns="http://www.w3.org/2000/svg">
-        <rect x="180" y="20" width="500" height="380" rx="12" fill="none" stroke="#1a7a4a" stroke-width="2" stroke-dasharray="8,4"/>
-        <text x="430" y="14" text-anchor="middle" fill="#1a7a4a" font-size="11" font-weight="700">«system» Bike Gear Analytics System</text>
+      <h3>🚲 Bike Gear — Sales Performance Pivot &amp; Dashboard</h3>
+      <p class="diag-desc">Pivot tables in Excel and PostgreSQL-backed Power BI dashboard tracking revenue, sell-through rates, and regional performance with DAX measures for YTD and MoM growth.</p>
+      <svg class="diag" viewBox="0 0 860 380" xmlns="http://www.w3.org/2000/svg">
+        <!-- Pivot table -->
+        <rect x="10" y="10" width="400" height="360" rx="10" fill="#eafaf1" stroke="#1a7a4a" stroke-width="1.5"/>
+        <text x="210" y="36" text-anchor="middle" fill="#0e4d2e" font-size="13" font-weight="800">📊 Excel Pivot — Revenue by Region &amp; Category</text>
+        <rect x="20" y="50" width="380" height="26" rx="4" fill="#0e4d2e"/>
+        <text x="90"  y="68" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Region</text>
+        <text x="180" y="68" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Category</text>
+        <text x="280" y="68" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Revenue</text>
+        <text x="370" y="68" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Sell-Through</text>
+        <rect x="20" y="76" width="380" height="24" fill="#fff"/>
+        <text x="90"  y="93" text-anchor="middle" fill="#1c2833" font-size="10">North</text>
+        <text x="180" y="93" text-anchor="middle" fill="#1c2833" font-size="10">Road Bikes</text>
+        <text x="280" y="93" text-anchor="middle" fill="#27ae60" font-size="10" font-weight="700">$142,300</text>
+        <text x="370" y="93" text-anchor="middle" fill="#27ae60" font-size="10">82%</text>
+        <rect x="20" y="100" width="380" height="24" fill="#eafaf1"/>
+        <text x="90"  y="117" text-anchor="middle" fill="#1c2833" font-size="10">North</text>
+        <text x="180" y="117" text-anchor="middle" fill="#1c2833" font-size="10">Accessories</text>
+        <text x="280" y="117" text-anchor="middle" fill="#2e86de" font-size="10" font-weight="700">$58,100</text>
+        <text x="370" y="117" text-anchor="middle" fill="#2e86de" font-size="10">67%</text>
+        <rect x="20" y="124" width="380" height="24" fill="#fff"/>
+        <text x="90"  y="141" text-anchor="middle" fill="#1c2833" font-size="10">South</text>
+        <text x="180" y="141" text-anchor="middle" fill="#1c2833" font-size="10">Mountain Bikes</text>
+        <text x="280" y="141" text-anchor="middle" fill="#27ae60" font-size="10" font-weight="700">$198,400</text>
+        <text x="370" y="141" text-anchor="middle" fill="#27ae60" font-size="10">91%</text>
+        <rect x="20" y="148" width="380" height="24" fill="#eafaf1"/>
+        <text x="90"  y="165" text-anchor="middle" fill="#1c2833" font-size="10">South</text>
+        <text x="180" y="165" text-anchor="middle" fill="#1c2833" font-size="10">Clothing</text>
+        <text x="280" y="165" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="700">$23,700</text>
+        <text x="370" y="165" text-anchor="middle" fill="#e74c3c" font-size="10">38%</text>
+        <rect x="20" y="172" width="380" height="24" fill="#fff"/>
+        <text x="90"  y="189" text-anchor="middle" fill="#1c2833" font-size="10">East</text>
+        <text x="180" y="189" text-anchor="middle" fill="#1c2833" font-size="10">Road Bikes</text>
+        <text x="280" y="189" text-anchor="middle" fill="#27ae60" font-size="10" font-weight="700">$176,900</text>
+        <text x="370" y="189" text-anchor="middle" fill="#27ae60" font-size="10">78%</text>
+        <rect x="20" y="196" width="380" height="24" fill="#eafaf1"/>
+        <text x="90"  y="213" text-anchor="middle" fill="#1c2833" font-size="10">West</text>
+        <text x="180" y="213" text-anchor="middle" fill="#1c2833" font-size="10">Electric Bikes</text>
+        <text x="280" y="213" text-anchor="middle" fill="#9b59b6" font-size="10" font-weight="700">$312,000</text>
+        <text x="370" y="213" text-anchor="middle" fill="#9b59b6" font-size="10">95%</text>
+        <!-- DAX callout -->
+        <rect x="20" y="235" width="380" height="125" rx="6" fill="#0e4d2e"/>
+        <text x="210" y="256" text-anchor="middle" fill="#a9dfbf" font-size="10" font-weight="800">DAX Measures Applied</text>
+        <text x="30"  y="276" fill="#a9dfbf" font-size="9">YTD Revenue = TOTALYTD(SUM(Sales[Revenue]), Dates[Date])</text>
+        <text x="30"  y="294" fill="#a9dfbf" font-size="9">MoM Growth % = DIVIDE([This Month] - [Last Month], [Last Month])</text>
+        <text x="30"  y="312" fill="#a9dfbf" font-size="9">Sell-Through = DIVIDE(SUM(Units Sold), SUM(Units Stocked))</text>
+        <text x="30"  y="330" fill="#a9dfbf" font-size="9">Return Rate = DIVIDE(SUM(Returns), SUM(Units Sold))</text>
+        <text x="30"  y="348" fill="#5d6d7e" font-size="9" font-style="italic">Source: PostgreSQL inventory DB via SSIS → Power BI model</text>
 
-        <ellipse cx="430" cy="65"  rx="130" ry="22" fill="#eafaf1" stroke="#1a7a4a" stroke-width="1.5"/>
-        <text x="430" y="69" text-anchor="middle" fill="#0e4d2e" font-size="10" font-weight="600">Load data via SSIS ETL pipeline</text>
-
-        <ellipse cx="430" cy="125" rx="130" ry="22" fill="#eafaf1" stroke="#1a7a4a" stroke-width="1.5"/>
-        <text x="430" y="129" text-anchor="middle" fill="#0e4d2e" font-size="10" font-weight="600">Query PostgreSQL inventory data</text>
-
-        <ellipse cx="430" cy="185" rx="130" ry="22" fill="#eafaf1" stroke="#1a7a4a" stroke-width="1.5"/>
-        <text x="430" y="189" text-anchor="middle" fill="#0e4d2e" font-size="10" font-weight="600">Build SSAS OLAP cube</text>
-
-        <ellipse cx="430" cy="245" rx="130" ry="22" fill="#eafaf1" stroke="#1a7a4a" stroke-width="1.5"/>
-        <text x="430" y="249" text-anchor="middle" fill="#0e4d2e" font-size="10" font-weight="600">Create Power BI + DAX dashboard</text>
-
-        <ellipse cx="430" cy="305" rx="130" ry="22" fill="#eafaf1" stroke="#1a7a4a" stroke-width="1.5"/>
-        <text x="430" y="309" text-anchor="middle" fill="#0e4d2e" font-size="10" font-weight="600">Generate SSRS paginated report</text>
-
-        <ellipse cx="430" cy="365" rx="130" ry="22" fill="#eafaf1" stroke="#1a7a4a" stroke-width="1.5"/>
-        <text x="430" y="369" text-anchor="middle" fill="#0e4d2e" font-size="10" font-weight="600">Deliver restocking recommendation</text>
-
-        <!-- Analyst left -->
-        <circle cx="60" cy="140" r="18" fill="none" stroke="#0d2137" stroke-width="2"/>
-        <text x="60" y="140" text-anchor="middle" fill="#0d2137" font-size="10">👤</text>
-        <text x="60" y="235" text-anchor="middle" fill="#0d2137" font-size="10" font-weight="700">Analyst</text>
-        <line x1="100" y1="140" x2="300" y2="65"  stroke="#555" stroke-width="1.2"/>
-        <line x1="100" y1="140" x2="300" y2="125" stroke="#555" stroke-width="1.2"/>
-        <line x1="100" y1="140" x2="300" y2="185" stroke="#555" stroke-width="1.2"/>
-        <line x1="100" y1="140" x2="300" y2="245" stroke="#555" stroke-width="1.2"/>
-        <line x1="100" y1="140" x2="300" y2="305" stroke="#555" stroke-width="1.2"/>
-
-        <!-- Retail manager right -->
-        <circle cx="760" cy="260" r="18" fill="none" stroke="#1a7a4a" stroke-width="2"/>
-        <text x="760" y="260" text-anchor="middle" fill="#1a7a4a" font-size="10">👤</text>
-        <text x="760" y="355" text-anchor="middle" fill="#1a7a4a" font-size="10" font-weight="700">Retail Manager</text>
-        <line x1="720" y1="260" x2="560" y2="245" stroke="#1a7a4a" stroke-width="1.2"/>
-        <line x1="720" y1="260" x2="560" y2="305" stroke="#1a7a4a" stroke-width="1.2"/>
-        <line x1="720" y1="260" x2="560" y2="365" stroke="#1a7a4a" stroke-width="1.2"/>
+        <!-- Dashboard -->
+        <rect x="430" y="10" width="420" height="360" rx="10" fill="#0e4d2e" stroke="#1a7a4a" stroke-width="1.5"/>
+        <text x="640" y="36" text-anchor="middle" fill="#fff" font-size="13" font-weight="800">📈 Power BI Dashboard</text>
+        <text x="640" y="52" text-anchor="middle" fill="#a9dfbf" font-size="10">Bike Gear Sales Performance</text>
+        <rect x="440" y="62" width="118" height="52" rx="6" fill="#145a32"/>
+        <text x="499" y="82" text-anchor="middle" fill="#a9dfbf" font-size="15" font-weight="900">$913K</text>
+        <text x="499" y="98" text-anchor="middle" fill="#a9dfbf" font-size="9">YTD Revenue</text>
+        <rect x="568" y="62" width="118" height="52" rx="6" fill="#145a32"/>
+        <text x="627" y="82" text-anchor="middle" fill="#a9dfbf" font-size="15" font-weight="900">+12.4%</text>
+        <text x="627" y="98" text-anchor="middle" fill="#a9dfbf" font-size="9">MoM Growth</text>
+        <rect x="696" y="62" width="144" height="52" rx="6" fill="#145a32"/>
+        <text x="768" y="82" text-anchor="middle" fill="#a9dfbf" font-size="15" font-weight="900">74%</text>
+        <text x="768" y="98" text-anchor="middle" fill="#a9dfbf" font-size="9">Avg Sell-Through</text>
+        <!-- Bar chart -->
+        <text x="640" y="138" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Revenue by Region</text>
+        <rect x="450" y="160" width="50" height="80" fill="#27ae60" rx="3"/>
+        <rect x="520" y="150" width="50" height="90" fill="#27ae60" rx="3"/>
+        <rect x="590" y="170" width="50" height="70" fill="#1a7a4a" rx="3"/>
+        <rect x="660" y="140" width="50" height="100" fill="#9b59b6" rx="3"/>
+        <rect x="730" y="175" width="50" height="65" fill="#1a7a4a" rx="3"/>
+        <text x="475" y="254" text-anchor="middle" fill="#a9dfbf" font-size="9">North</text>
+        <text x="545" y="254" text-anchor="middle" fill="#a9dfbf" font-size="9">South</text>
+        <text x="615" y="254" text-anchor="middle" fill="#a9dfbf" font-size="9">East</text>
+        <text x="685" y="254" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">West ⭐</text>
+        <text x="755" y="254" text-anchor="middle" fill="#a9dfbf" font-size="9">Central</text>
+        <line x1="440" y1="245" x2="840" y2="245" stroke="#145a32" stroke-width="1"/>
+        <!-- Seasonal line -->
+        <text x="640" y="280" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Seasonal Demand (SSAS Cube Output)</text>
+        <polyline points="445,335 490,325 535,300 580,290 625,295 670,285 715,275 760,282 805,270 840,265" fill="none" stroke="#a9dfbf" stroke-width="2"/>
+        <line x1="440" y1="345" x2="840" y2="345" stroke="#145a32" stroke-width="1"/>
+        <text x="640" y="365" text-anchor="middle" fill="#5d6d7e" font-size="9" font-style="italic">Filter: Date slicer · Region · Category · Sell-through threshold</text>
       </svg>
     </div>
+
+    <!-- HOSPITAL -->
+    <div class="diag-box">
+      <h3>🏥 Hospital — Revenue Cycle Pivot &amp; Power BI Dashboard</h3>
+      <p class="diag-desc">Multi-source pivot analysis of billing transactions, insurance claims, and AR aging — driving the Power BI dashboard used by finance and operations teams.</p>
+      <svg class="diag" viewBox="0 0 860 400" xmlns="http://www.w3.org/2000/svg">
+        <!-- Pivot -->
+        <rect x="10" y="10" width="400" height="380" rx="10" fill="#f4ecf7" stroke="#7d3c98" stroke-width="1.5"/>
+        <text x="210" y="36" text-anchor="middle" fill="#4a235a" font-size="13" font-weight="800">📊 Pivot — AR Aging by Department &amp; Payer</text>
+        <rect x="20" y="50" width="380" height="26" rx="4" fill="#4a235a"/>
+        <text x="90"  y="68" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Department</text>
+        <text x="200" y="68" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Payer Type</text>
+        <text x="300" y="68" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Avg Days AR</text>
+        <text x="375" y="68" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Denial %</text>
+        <rect x="20" y="76" width="380" height="24" fill="#fff"/>
+        <text x="90"  y="93" text-anchor="middle" fill="#1c2833" font-size="10">Radiology</text>
+        <text x="200" y="93" text-anchor="middle" fill="#1c2833" font-size="10">Insurance</text>
+        <text x="300" y="93" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="700">62 days</text>
+        <text x="375" y="93" text-anchor="middle" fill="#e74c3c" font-size="10">34%</text>
+        <rect x="20" y="100" width="380" height="24" fill="#f4ecf7"/>
+        <text x="90"  y="117" text-anchor="middle" fill="#1c2833" font-size="10">Pathology</text>
+        <text x="200" y="117" text-anchor="middle" fill="#1c2833" font-size="10">Insurance</text>
+        <text x="300" y="117" text-anchor="middle" fill="#e74c3c" font-size="10" font-weight="700">58 days</text>
+        <text x="375" y="117" text-anchor="middle" fill="#e74c3c" font-size="10">29%</text>
+        <rect x="20" y="124" width="380" height="24" fill="#fff"/>
+        <text x="90"  y="141" text-anchor="middle" fill="#1c2833" font-size="10">Emergency</text>
+        <text x="200" y="141" text-anchor="middle" fill="#1c2833" font-size="10">Mixed</text>
+        <text x="300" y="141" text-anchor="middle" fill="#e67e22" font-size="10" font-weight="700">45 days</text>
+        <text x="375" y="141" text-anchor="middle" fill="#e67e22" font-size="10">22%</text>
+        <rect x="20" y="148" width="380" height="24" fill="#f4ecf7"/>
+        <text x="90"  y="165" text-anchor="middle" fill="#1c2833" font-size="10">Outpatient</text>
+        <text x="200" y="165" text-anchor="middle" fill="#1c2833" font-size="10">Insurance</text>
+        <text x="300" y="165" text-anchor="middle" fill="#e67e22" font-size="10" font-weight="700">45 days</text>
+        <text x="375" y="165" text-anchor="middle" fill="#e67e22" font-size="10">27%</text>
+        <rect x="20" y="172" width="380" height="24" fill="#fff"/>
+        <text x="90"  y="189" text-anchor="middle" fill="#1c2833" font-size="10">Surgery</text>
+        <text x="200" y="189" text-anchor="middle" fill="#1c2833" font-size="10">Cash Pay</text>
+        <text x="300" y="189" text-anchor="middle" fill="#27ae60" font-size="10" font-weight="700">18 days</text>
+        <text x="375" y="189" text-anchor="middle" fill="#27ae60" font-size="10">4%</text>
+        <!-- DAX measures box -->
+        <rect x="20" y="210" width="380" height="170" rx="6" fill="#4a235a"/>
+        <text x="210" y="230" text-anchor="middle" fill="#d7bde2" font-size="10" font-weight="800">Key DAX Measures (Power BI)</text>
+        <text x="30" y="250" fill="#d7bde2" font-size="9">AR Aging Bucket = IF(DaysAR&lt;=30,"Current",IF(DaysAR&lt;=60,"30-60","60+"))</text>
+        <text x="30" y="268" fill="#d7bde2" font-size="9">Denial Rate % = DIVIDE(COUNTX(Claims,Denied=1), COUNTROWS(Claims))</text>
+        <text x="30" y="286" fill="#d7bde2" font-size="9">Collection Efficiency = DIVIDE(SUM(Collected), SUM(Billed))</text>
+        <text x="30" y="304" fill="#d7bde2" font-size="9">Net Revenue by Dept = SUM(Billed) - SUM(Adjustments) - SUM(Denials)</text>
+        <text x="30" y="322" fill="#d7bde2" font-size="9">Claim Resolution Time = AVERAGEX(Claims, DATEDIFF(Submitted,Resolved,DAY))</text>
+        <text x="30" y="348" fill="#7d3c98" font-size="9" font-style="italic">Data sources: SQL Server billing DB + 4 SSIS ETL feeds → SSAS OLAP cube</text>
+        <text x="30" y="366" fill="#7d3c98" font-size="9" font-style="italic">Paginated reports via SSRS · Monthly distribution to finance team</text>
+
+        <!-- Dashboard -->
+        <rect x="430" y="10" width="420" height="380" rx="10" fill="#4a235a" stroke="#7d3c98" stroke-width="1.5"/>
+        <text x="640" y="36" text-anchor="middle" fill="#fff" font-size="13" font-weight="800">📈 Power BI Dashboard</text>
+        <text x="640" y="52" text-anchor="middle" fill="#d7bde2" font-size="10">Hospital Revenue Cycle</text>
+        <rect x="440" y="62" width="118" height="52" rx="6" fill="#6c3483"/>
+        <text x="499" y="82" text-anchor="middle" fill="#d7bde2" font-size="15" font-weight="900">27%</text>
+        <text x="499" y="98" text-anchor="middle" fill="#d7bde2" font-size="9">Denial Rate</text>
+        <rect x="568" y="62" width="118" height="52" rx="6" fill="#6c3483"/>
+        <text x="627" y="82" text-anchor="middle" fill="#d7bde2" font-size="15" font-weight="900">45 days</text>
+        <text x="627" y="98" text-anchor="middle" fill="#d7bde2" font-size="9">Avg AR Days</text>
+        <rect x="696" y="62" width="144" height="52" rx="6" fill="#6c3483"/>
+        <text x="768" y="82" text-anchor="middle" fill="#d7bde2" font-size="15" font-weight="900">62%</text>
+        <text x="768" y="98" text-anchor="middle" fill="#d7bde2" font-size="9">Collect. Efficiency</text>
+        <!-- AR aging stacked bar -->
+        <text x="640" y="135" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">AR Aging Buckets by Department</text>
+        <rect x="445" y="148" width="50" height="25" fill="#27ae60" rx="2"/>
+        <rect x="445" y="173" width="50" height="35" fill="#e67e22" rx="2"/>
+        <rect x="445" y="208" width="50" height="40" fill="#e74c3c" rx="2"/>
+        <rect x="510" y="148" width="50" height="20" fill="#27ae60" rx="2"/>
+        <rect x="510" y="168" width="50" height="30" fill="#e67e22" rx="2"/>
+        <rect x="510" y="198" width="50" height="50" fill="#e74c3c" rx="2"/>
+        <rect x="575" y="148" width="50" height="30" fill="#27ae60" rx="2"/>
+        <rect x="575" y="178" width="50" height="40" fill="#e67e22" rx="2"/>
+        <rect x="575" y="218" width="50" height="30" fill="#e74c3c" rx="2"/>
+        <rect x="640" y="148" width="50" height="15" fill="#27ae60" rx="2"/>
+        <rect x="640" y="163" width="50" height="20" fill="#e67e22" rx="2"/>
+        <rect x="640" y="183" width="50" height="65" fill="#e74c3c" rx="2"/>
+        <rect x="705" y="148" width="50" height="60" fill="#27ae60" rx="2"/>
+        <rect x="705" y="208" width="50" height="10" fill="#e67e22" rx="2"/>
+        <text x="470"  y="262" text-anchor="middle" fill="#d7bde2" font-size="8">Surgery</text>
+        <text x="535"  y="262" text-anchor="middle" fill="#d7bde2" font-size="8">Emerg.</text>
+        <text x="600"  y="262" text-anchor="middle" fill="#d7bde2" font-size="8">Outpt.</text>
+        <text x="665"  y="262" text-anchor="middle" fill="#d7bde2" font-size="8">Radiol.</text>
+        <text x="730"  y="262" text-anchor="middle" fill="#d7bde2" font-size="8">Path.</text>
+        <text x="800" y="162" fill="#27ae60" font-size="8">● 0-30d</text>
+        <text x="800" y="178" fill="#e67e22" font-size="8">● 31-60d</text>
+        <text x="800" y="194" fill="#e74c3c" font-size="8">● 60d+</text>
+        <!-- Revenue trend -->
+        <text x="640" y="292" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Monthly Revenue vs. Collections</text>
+        <polyline points="445,355 490,345 535,340 580,330 625,325 670,318 715,312 760,308 805,300 840,295" fill="none" stroke="#d7bde2" stroke-width="2"/>
+        <polyline points="445,370 490,362 535,358 580,350 625,345 670,336 715,330 760,322 805,316 840,308" fill="none" stroke="#27ae60" stroke-width="2" stroke-dasharray="5,2"/>
+        <line x1="440" y1="378" x2="840" y2="378" stroke="#6c3483" stroke-width="1"/>
+        <text x="640" y="395" text-anchor="middle" fill="#7d3c98" font-size="9" font-style="italic">Slicer: Dept · Payer · Date · AR Bucket · Alert when denial rate &gt;15%</text>
+      </svg>
+    </div>
+
   </div>
 </div>
 
-    <div class="diag-box">
-      <h3>🏥 Hospital — Use Case Diagram</h3>
-      <p class="diag-desc">Actor–system interactions for the Hospital Transaction Dashboard, covering all users from billing staff to executive leadership.</p>
-      <svg class="diag" viewBox="0 0 820 500" xmlns="http://www.w3.org/2000/svg">
-        <rect x="160" y="20" width="540" height="440" rx="12" fill="none" stroke="#7d3c98" stroke-width="2" stroke-dasharray="8,4"/>
-        <text x="430" y="14" text-anchor="middle" fill="#7d3c98" font-size="11" font-weight="700">«system» Hospital Transaction Analytics Platform</text>
-
-        <ellipse cx="430" cy="65"  rx="150" ry="22" fill="#f4ecf7" stroke="#7d3c98" stroke-width="1.5"/>
-        <text x="430" y="69" text-anchor="middle" fill="#4a235a" font-size="10" font-weight="600">Run SSIS ETL pipeline (load billing + claims data)</text>
-        <ellipse cx="430" cy="120" rx="150" ry="22" fill="#f4ecf7" stroke="#7d3c98" stroke-width="1.5"/>
-        <text x="430" y="124" text-anchor="middle" fill="#4a235a" font-size="10" font-weight="600">Query outstanding AR by department &amp; payer</text>
-        <ellipse cx="430" cy="175" rx="150" ry="22" fill="#f4ecf7" stroke="#7d3c98" stroke-width="1.5"/>
-        <text x="430" y="179" text-anchor="middle" fill="#4a235a" font-size="10" font-weight="600">View Power BI denial rate &amp; collection KPI dashboard</text>
-        <ellipse cx="430" cy="230" rx="150" ry="22" fill="#f4ecf7" stroke="#7d3c98" stroke-width="1.5"/>
-        <text x="430" y="234" text-anchor="middle" fill="#4a235a" font-size="10" font-weight="600">Generate SSRS monthly billing report</text>
-        <ellipse cx="430" cy="285" rx="150" ry="22" fill="#f4ecf7" stroke="#7d3c98" stroke-width="1.5"/>
-        <text x="430" y="289" text-anchor="middle" fill="#4a235a" font-size="10" font-weight="600">Analyse claim denial root causes</text>
-        <ellipse cx="430" cy="340" rx="150" ry="22" fill="#f4ecf7" stroke="#7d3c98" stroke-width="1.5"/>
-        <text x="430" y="344" text-anchor="middle" fill="#4a235a" font-size="10" font-weight="600">Produce revenue forecast &amp; trend report</text>
-        <ellipse cx="430" cy="395" rx="150" ry="22" fill="#f4ecf7" stroke="#7d3c98" stroke-width="1.5"/>
-        <text x="430" y="399" text-anchor="middle" fill="#4a235a" font-size="10" font-weight="600">Present executive PowerPoint deck</text>
-        <ellipse cx="430" cy="450" rx="150" ry="22" fill="#f4ecf7" stroke="#7d3c98" stroke-width="1.5"/>
-        <text x="430" y="454" text-anchor="middle" fill="#4a235a" font-size="10" font-weight="600">Raise Jira tickets for billing process improvements</text>
-
-        <!-- Analyst left -->
-        <circle cx="55" cy="180" r="18" fill="none" stroke="#0d2137" stroke-width="2"/>
-        <text x="55" y="180" text-anchor="middle" fill="#0d2137" font-size="10">👤</text>
-        <text x="55" y="270" text-anchor="middle" fill="#0d2137" font-size="10" font-weight="700">BA / Analyst</text>
-        <line x1="96"  y1="180" x2="280" y2="65"  stroke="#555" stroke-width="1.2"/>
-        <line x1="96"  y1="180" x2="280" y2="120" stroke="#555" stroke-width="1.2"/>
-        <line x1="96"  y1="180" x2="280" y2="175" stroke="#555" stroke-width="1.2"/>
-        <line x1="96"  y1="180" x2="280" y2="230" stroke="#555" stroke-width="1.2"/>
-        <line x1="96"  y1="180" x2="280" y2="285" stroke="#555" stroke-width="1.2"/>
-        <line x1="96"  y1="180" x2="280" y2="340" stroke="#555" stroke-width="1.2"/>
-        <line x1="96"  y1="180" x2="280" y2="450" stroke="#555" stroke-width="1.2"/>
-
-        <!-- Finance / Ops right -->
-        <circle cx="765" cy="280" r="18" fill="none" stroke="#7d3c98" stroke-width="2"/>
-        <text x="765" y="280" text-anchor="middle" fill="#7d3c98" font-size="10">👤</text>
-        <text x="765" y="370" text-anchor="middle" fill="#7d3c98" font-size="10" font-weight="700">Finance / Ops</text>
-        <line x1="724" y1="280" x2="580" y2="175" stroke="#7d3c98" stroke-width="1.2"/>
-        <line x1="724" y1="280" x2="580" y2="230" stroke="#7d3c98" stroke-width="1.2"/>
-        <line x1="724" y1="280" x2="580" y2="285" stroke="#7d3c98" stroke-width="1.2"/>
-        <line x1="724" y1="280" x2="580" y2="340" stroke="#7d3c98" stroke-width="1.2"/>
-        <line x1="724" y1="280" x2="580" y2="395" stroke="#7d3c98" stroke-width="1.2"/>
-      </svg>
-    </div>
-
-  </div>
-</div>
 
 <!-- ══════════ DECISION TREE ══════════ -->
 <div class="section" id="decision">
